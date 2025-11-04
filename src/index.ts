@@ -9,7 +9,7 @@ const program = new Command();
 program
   .name('create-dib-app')
   .description('CLI tool to scaffold opinionated prototype workspaces')
-  .version('0.1.0')
+  .version('0.2.0')
   .argument('[project-name]', 'Name of the project')
   .action(async (projectName?: string) => {
     try {

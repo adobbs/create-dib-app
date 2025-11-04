@@ -1,0 +1,149 @@
+{
+  "empty": [],
+  "normal": [
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "description": "Premium noise-cancelling headphones",
+      "price": 299.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300",
+      "category": "Electronics",
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Smart Watch",
+      "description": "Fitness tracking smartwatch",
+      "price": 399.99,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300",
+      "category": "Electronics",
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "id": "3",
+      "name": "Running Shoes",
+      "description": "Comfortable athletic shoes",
+      "price": 129.99,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300",
+      "category": "Apparel",
+      "inStock": true,
+      "rating": 4.3
+    }
+  ],
+  "edge-case": [
+    {
+      "id": "1",
+      "name": "Ultra-Premium Professional Grade Studio Quality Over-Ear Wireless Bluetooth 5.3 Active Noise Cancelling Headphones with Hi-Res Audio Certification",
+      "description": "Experience unparalleled audio quality with our flagship model featuring advanced noise cancellation technology, premium leather ear cushions, 40mm neodymium drivers, aptX HD codec support, multipoint connectivity, wearing detection sensors, customizable EQ profiles, companion app with firmware updates, foldable design with premium carrying case, and an industry-leading 60-hour battery life on a single charge",
+      "price": 999999.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300",
+      "category": "Premium Electronics & Professional Audio Equipment",
+      "inStock": false,
+      "rating": 5.0
+    },
+    {
+      "id": "2",
+      "name": "Watch",
+      "description": "A",
+      "price": 0.01,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300",
+      "category": "Electronics",
+      "inStock": true,
+      "rating": 1.0
+    },
+    {
+      "id": "3",
+      "name": "Shoes",
+      "description": "",
+      "price": 0,
+      "image": "",
+      "category": "",
+      "inStock": false,
+      "rating": 0
+    },
+    {
+      "id": "4",
+      "name": "Product #4",
+      "description": "Item 4",
+      "price": 10.00,
+      "image": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=300",
+      "category": "Misc",
+      "inStock": true,
+      "rating": 3.5
+    },
+    {
+      "id": "5",
+      "name": "Product #5",
+      "description": "Item 5",
+      "price": 15.00,
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300",
+      "category": "Misc",
+      "inStock": true,
+      "rating": 3.8
+    },
+    {
+      "id": "6",
+      "name": "Product #6",
+      "description": "Item 6",
+      "price": 20.00,
+      "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=300",
+      "category": "Misc",
+      "inStock": true,
+      "rating": 4.1
+    },
+    {
+      "id": "7",
+      "name": "Product #7",
+      "description": "Item 7",
+      "price": 25.00,
+      "image": "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=300",
+      "category": "Misc",
+      "inStock": true,
+      "rating": 3.2
+    },
+    {
+      "id": "8",
+      "name": "Product #8",
+      "description": "Item 8",
+      "price": 30.00,
+      "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=300",
+      "category": "Misc",
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "id": "9",
+      "name": "Product #9",
+      "description": "Item 9",
+      "price": 35.00,
+      "image": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=300",
+      "category": "Misc",
+      "inStock": true,
+      "rating": 3.9
+    },
+    {
+      "id": "10",
+      "name": "Product #10",
+      "description": "Item 10",
+      "price": 40.00,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=300",
+      "category": "Misc",
+      "inStock": true,
+      "rating": 4.4
+    }
+  ],
+  "error": [
+    {
+      "id": "1",
+      "name": "",
+      "description": "",
+      "price": -100,
+      "image": "invalid-url",
+      "category": "",
+      "inStock": true,
+      "rating": 6.0
+    }
+  ]
+}
