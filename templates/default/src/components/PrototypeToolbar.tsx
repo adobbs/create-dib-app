@@ -2,7 +2,8 @@
 
 import { Group, Select, Button, Paper, Text } from '@mantine/core';
 import { RotateCcw } from 'lucide-react';
-import { Scenario, scenarios } from '@/data/scenarios';
+import { Scenario } from '@/types';
+import { scenarios } from '@/lib/scenarios';
 
 interface PrototypeToolbarProps {
   currentScenario: Scenario;

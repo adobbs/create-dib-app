@@ -1,15 +1,13 @@
+import { Scenario } from '@/types';
+
 /**
- * Data Scenarios for Prototyping
+ * Scenario metadata for prototyping toolbar
  *
- * Switch between different data states to test your UI:
- * - Empty state (new users)
- * - Normal state (typical usage)
- * - Edge cases (long names, many items)
- * - Error states (validation issues)
+ * Each scenario provides:
+ * - id: The scenario identifier (matches Scenario type)
+ * - name: Display name for UI
+ * - description: Help text explaining the scenario
  */
-
-export type Scenario = 'empty' | 'normal' | 'edge-case' | 'error';
-
 export const scenarios = {
   empty: {
     id: 'empty' as Scenario,
@@ -33,10 +31,16 @@ export const scenarios = {
   },
 } as const;
 
+/**
+ * Get the display name for a scenario
+ */
 export function getScenarioName(scenario: Scenario): string {
   return scenarios[scenario]?.name || 'Unknown';
 }
 
+/**
+ * Get the description for a scenario
+ */
 export function getScenarioDescription(scenario: Scenario): string {
   return scenarios[scenario]?.description || '';
 }

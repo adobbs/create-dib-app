@@ -15,7 +15,7 @@ import { CheckCircle } from 'lucide-react';
 import { PrototypeLayout } from '@/components/PrototypeLayout';
 import { PrototypeToolbar } from '@/components/PrototypeToolbar';
 import { useProfileStore } from '@/stores/useProfileStore';
-import { Scenario } from '@/data/scenarios';
+import { Scenario } from '@/types';
 import { useState } from 'react';
 
 export default function ProfileEditorPage() {

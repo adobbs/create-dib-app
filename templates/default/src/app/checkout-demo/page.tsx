@@ -5,7 +5,7 @@ import { Stack, Stepper, Button, Group } from '@mantine/core';
 import { PrototypeLayout } from '@/components/PrototypeLayout';
 import { PrototypeToolbar } from '@/components/PrototypeToolbar';
 import { useCheckoutStore, CheckoutStep } from '@/stores/useCheckoutStore';
-import { Scenario } from '@/data/scenarios';
+import { Scenario } from '@/types';
 import { CartStep } from './components/CartStep';
 import { ShippingStep } from './components/ShippingStep';
 import { PaymentStep } from './components/PaymentStep';
