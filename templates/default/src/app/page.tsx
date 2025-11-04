@@ -6,12 +6,44 @@ import {
   Text,
   Paper,
   Stack,
-  Button,
   Group,
-  Badge,
+  SimpleGrid,
   Code,
 } from '@mantine/core';
-import { Plus, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
+import { DashboardCard, PrototypeInfo } from '@/components/DashboardCard';
+
+/**
+ * Prototype Registry
+ *
+ * Add your prototypes here to display them on the dashboard.
+ * Each prototype should have:
+ * - id: unique identifier
+ * - title: display name
+ * - description: what this prototype demonstrates
+ * - path: route path (e.g., '/checkout-demo')
+ * - tags: array of relevant tags
+ * - status: 'stable', 'beta', or 'experimental'
+ */
+const PROTOTYPES: PrototypeInfo[] = [
+  {
+    id: 'checkout-demo',
+    title: 'Checkout Flow',
+    description:
+      'Multi-step checkout process with cart, shipping, and payment steps',
+    path: '/checkout-demo',
+    tags: ['e-commerce', 'multi-step', 'forms'],
+    status: 'stable',
+  },
+  {
+    id: 'profile-editor',
+    title: 'Profile Editor',
+    description: 'User profile form with validation and error handling',
+    path: '/profile-editor',
+    tags: ['forms', 'validation', 'user profile'],
+    status: 'stable',
+  },
+];
 
 export default function Dashboard() {
   return (
@@ -20,12 +52,23 @@ export default function Dashboard() {
         {/* Header */}
         <div>
           <Title order={1} mb="xs">
-            🎨 Prototype Dashboard
+            Prototype Dashboard
           </Title>
           <Text c="dimmed" size="lg">
-            Welcome to your prototype workspace! Start by creating your first
-            prototype.
+            Explore example prototypes with switchable data scenarios
           </Text>
+        </div>
+
+        {/* Prototypes Grid */}
+        <div>
+          <Text fw={600} size="lg" mb="md">
+            Example Prototypes
+          </Text>
+          <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
+            {PROTOTYPES.map((prototype) => (
+              <DashboardCard key={prototype.id} prototype={prototype} />
+            ))}
+          </SimpleGrid>
         </div>
 
         {/* Getting Started Card */}
@@ -33,12 +76,13 @@ export default function Dashboard() {
           <Stack gap="md">
             <Group>
               <BookOpen size={24} />
-              <Title order={3}>Getting Started</Title>
+              <Title order={3}>Add Your Own Prototypes</Title>
             </Group>
 
             <Text>
-              This is your prototype dashboard. You can add prototypes by creating
-              new folders in the <Code>src/app/</Code> directory.
+              Create new prototypes by adding folders in the{' '}
+              <Code>src/app/</Code> directory. Then register them in the{' '}
+              <Code>PROTOTYPES</Code> array above.
             </Text>
 
             <div>
@@ -54,32 +98,9 @@ export default function Dashboard() {
             </div>
 
             <Text size="sm" c="dimmed">
-              Then visit{' '}
-              <Code>/my-prototype</Code> to see your new
-              prototype!
+              Then add it to the <Code>PROTOTYPES</Code> array in{' '}
+              <Code>src/app/page.tsx</Code> to display it on the dashboard.
             </Text>
-          </Stack>
-        </Paper>
-
-        {/* Placeholder for future prototypes */}
-        <Paper shadow="sm" p="xl" radius="md" withBorder style={{
-          borderStyle: 'dashed',
-          borderColor: 'var(--mantine-color-gray-3)',
-          backgroundColor: 'var(--mantine-color-gray-0)',
-        }}>
-          <Stack align="center" gap="md" py="xl">
-            <Plus size={48} strokeWidth={1.5} color="var(--mantine-color-gray-5)" />
-            <div style={{ textAlign: 'center' }}>
-              <Text fw={500} size="lg" mb="xs">
-                No prototypes yet
-              </Text>
-              <Text c="dimmed" size="sm">
-                Create your first prototype to see it listed here
-              </Text>
-            </div>
-            <Badge variant="light" size="lg">
-              Ready to prototype!
-            </Badge>
           </Stack>
         </Paper>
 
@@ -87,16 +108,34 @@ export default function Dashboard() {
         <Paper shadow="xs" p="md" radius="md" bg="blue.0">
           <Stack gap="sm">
             <Text fw={500} size="sm">
-              📚 Helpful Resources:
+              Helpful Resources:
             </Text>
             <Group gap="md">
-              <Text size="sm" component="a" href="https://nextjs.org/docs" target="_blank" c="blue.7">
+              <Text
+                size="sm"
+                component="a"
+                href="https://nextjs.org/docs"
+                target="_blank"
+                c="blue.7"
+              >
                 Next.js Docs
               </Text>
-              <Text size="sm" component="a" href="https://mantine.dev/" target="_blank" c="blue.7">
+              <Text
+                size="sm"
+                component="a"
+                href="https://mantine.dev/"
+                target="_blank"
+                c="blue.7"
+              >
                 Mantine UI
               </Text>
-              <Text size="sm" component="a" href="https://zustand-demo.pmnd.rs/" target="_blank" c="blue.7">
+              <Text
+                size="sm"
+                component="a"
+                href="https://zustand-demo.pmnd.rs/"
+                target="_blank"
+                c="blue.7"
+              >
                 Zustand
               </Text>
             </Group>

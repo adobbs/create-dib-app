@@ -1,0 +1,38 @@
+{
+  "empty": {
+    "name": "",
+    "email": "",
+    "bio": "",
+    "location": "",
+    "website": "",
+    "company": "",
+    "avatar": ""
+  },
+  "normal": {
+    "name": "Alex Morgan",
+    "email": "alex.morgan@example.com",
+    "bio": "Product designer passionate about creating intuitive user experiences",
+    "location": "San Francisco, CA",
+    "website": "https://alexmorgan.design",
+    "company": "Design Co",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex"
+  },
+  "edge-case": {
+    "name": "Dr. María José Gutiérrez-Sánchez von Zimmermann III",
+    "email": "maria.jose.gutierrez.sanchez.von.zimmermann.the.third@very-long-company-name-international.co.uk",
+    "bio": "Experienced senior executive leader with over 25 years of expertise in enterprise software architecture, distributed systems design, cloud infrastructure, DevOps practices, agile methodologies, team leadership, and strategic technology planning across multiple Fortune 500 companies in various industries including finance, healthcare, telecommunications, and e-commerce platforms.",
+    "location": "São Paulo, Brazil / Remote / Traveling frequently between EMEA and APAC regions",
+    "website": "https://this-is-an-extremely-long-domain-name-for-testing-edge-cases.international",
+    "company": "International Conglomerate of Technology Solutions and Digital Transformation Services LLC",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maria"
+  },
+  "error": {
+    "name": "John Doe",
+    "email": "invalid-email",
+    "bio": "",
+    "location": "",
+    "website": "not-a-url",
+    "company": "",
+    "avatar": ""
+  }
+}
