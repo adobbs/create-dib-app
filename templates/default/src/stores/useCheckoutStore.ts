@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Scenario } from '@/data/scenarios';
+import { Scenario } from '@/types';
 import productsData from '@/data/products.json';
 
 export type CheckoutStep = 'cart' | 'shipping' | 'payment' | 'confirmation';

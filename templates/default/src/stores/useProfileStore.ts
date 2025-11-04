@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Scenario } from '@/data/scenarios';
+import { Scenario } from '@/types';
 import usersData from '@/data/users.json';
 
 export interface UserProfile {
