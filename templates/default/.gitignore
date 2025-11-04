@@ -11,7 +11,6 @@ coverage
 .next/
 out/
 build
-dist
 
 # Production
 *.log*
@@ -24,9 +23,6 @@ yarn-error.log*
 # Local env files
 .env
 .env*.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # Vercel
 .vercel
@@ -36,19 +32,9 @@ yarn-error.log*
 next-env.d.ts
 
 # IDE
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
+.vscode
 .idea
 *.swp
 *.swo
 *~
 .DS_Store
-
-# Turbopack
-.turbo
-
-# CLI Testing
-test-project
-*.test-project
-test-*
