@@ -11,7 +11,7 @@ import {
   Badge,
   Code,
 } from '@mantine/core';
-import { IconPlus, IconBook } from '@tabler/icons-react';
+import { Plus, BookOpen } from 'lucide-react';
 
 export default function Dashboard() {
   return (
@@ -32,7 +32,7 @@ export default function Dashboard() {
         <Paper shadow="sm" p="xl" radius="md" withBorder>
           <Stack gap="md">
             <Group>
-              <IconBook size={24} />
+              <BookOpen size={24} />
               <Title order={3}>Getting Started</Title>
             </Group>
 
@@ -68,7 +68,7 @@ export default function Dashboard() {
           backgroundColor: 'var(--mantine-color-gray-0)',
         }}>
           <Stack align="center" gap="md" py="xl">
-            <IconPlus size={48} stroke={1.5} color="var(--mantine-color-gray-5)" />
+            <Plus size={48} strokeWidth={1.5} color="var(--mantine-color-gray-5)" />
             <div style={{ textAlign: 'center' }}>
               <Text fw={500} size="lg" mb="xs">
                 No prototypes yet
