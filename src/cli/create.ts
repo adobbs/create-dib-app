@@ -76,6 +76,12 @@ export async function createProject(options: CreateOptions = {}): Promise<void> 
       await replaceInFile(readmePath, replacements);
     }
 
+    // Replace in layout.tsx
+    const layoutPath = path.join(projectPath, 'src/app/layout.tsx');
+    if (await fs.pathExists(layoutPath)) {
+      await replaceInFile(layoutPath, replacements);
+    }
+
     spinner.succeed('Configured project');
   } catch (error) {
     spinner.fail('Failed to configure project');
